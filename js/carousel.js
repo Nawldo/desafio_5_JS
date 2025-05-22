@@ -27,4 +27,18 @@ class Carousel {
     const urls = ["#car1", "#car2", "#car3"];
 
     new Carousel(images, titles, urls);
-});
+})
+
+// Cria um novo elemento <style> e insere regras CSS
+const style = document.createElement("style");
+style.innerHTML = `
+  div#carousel {
+    display: flex;
+    height: 500px;
+    width: auto;
+}
+  
+`
+// Adiciona a regra ao <head> da página
+document.head.appendChild(style);
+
