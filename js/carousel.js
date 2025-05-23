@@ -23,7 +23,7 @@ class Carousel {
 
     document.addEventListener("DOMContentLoaded", () => {
     const images = ["img/imagem_1.jpg", "img/imagem_2.jpg", "img/imagem_3.jpg"];
-    const titles = ["Esta é a nova Ranger Ford 2022. Verifique novidades. ", "Carro 1",  "Novo Ford Branco Sport 2022"];
+    const titles = ["Esta é a nova Ranger Ford 2022. Verifique novidades. ", "Ford T, primeiro carro popular da història.",  "Novo Ford Branco Sport 2022."];
     const urls = ["#car1", "#car2", "#car3"];
 
     new Carousel(images, titles, urls);
@@ -31,13 +31,21 @@ class Carousel {
 
 // Cria um novo elemento <style> e insere regras CSS
 const style = document.createElement("style");
-style.innerHTML = `
-  div#carousel {
-    display: flex;
-    height: 500px;
-    width: auto;
-}
-  
+style.innerHTML = 
+`
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Garante que ocupe toda a altura da tela */
+  flex-direction: column; /* Coloca os elementos um abaixo do outro */
+} 
+
+div#carousel {
+   width: 86%;
+   height: 86%;
+   object-fit: contain;
+
 `
 // Adiciona a regra ao <head> da página
 document.head.appendChild(style);
