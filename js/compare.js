@@ -68,7 +68,15 @@ function UpdateCompareTable() {
 
     for (let i = 0; i < carArr.length; i++) {
         document.getElementById(`compare_modelo_${i}`).innerText = carArr[i].nome;
-        document.getElementById(`compare_preco_${i}`).innerText = `R$ ${carArr[i].preco.toLocaleString('pt-BR')}`;
+        document.getElementById(`compare_preco_${i}`).innerText = `R$ ${carArr[i].preco.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
         document.getElementById(`compare_image_${i}`).innerHTML = `<img src='${carArr[i].image}' width='100'>`;
+        document.getElementById(`compare_alturacacamba_${i}`).innerText = carArr[i].alturaCacamba;
+        document.getElementById(`compare_alturaveiculo_${i}`).innerText = carArr[i].alturaVeiculo;
+        document.getElementById(`compare_alturasolo_${i}`).innerText = carArr[i].alturaSolo;
+        document.getElementById(`compare_capacidadecarga_${i}`).innerText = carArr[i].capacidadeCarga;
+        document.getElementById(`compare_motor_${i}`).innerText = carArr[i].motor;
+        document.getElementById(`compare_potencia_${i}`).innerText = carArr[i].potencia;
+        document.getElementById(`compare_volumecacamba_${i}`).innerText = carArr[i].volumeCacamba;
+        document.getElementById(`compare_roda_${i}`).innerText = carArr[i].roda;
     }
 }
