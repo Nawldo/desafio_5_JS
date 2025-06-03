@@ -38,6 +38,7 @@ header ul {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    width: 100%;
 }
 
 ul {
@@ -49,17 +50,21 @@ header {
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header div {
     display: inline;
     vertical-align: middle;
+    display: inline-block;
 }
 
 header nav {
     display: inline-block;
     vertical-align: middle;
-    width: 80vw;
+    width: 100%;
 }
 
 header nav a {
@@ -121,3 +126,31 @@ button {
     border: 2px;
     border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav a {
+        display: block;
+        padding: 10px;
+    }
+
+    div#carousel {
+        height: auto;
+        min-height: 250px;
+    }
+
+    footer div {
+        float: none;
+        text-align: center;
+    }
+
+}
+

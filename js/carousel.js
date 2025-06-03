@@ -61,7 +61,8 @@ button {
 
 div#carousel {
    width: 90%;
-   height: 86%;
+   height: 100%;
+   padding: 70px 10px;
    object-fit: contain;
 }   
 
