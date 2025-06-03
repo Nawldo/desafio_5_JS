@@ -65,6 +65,7 @@ header nav {
     display: inline-block;
     vertical-align: middle;
     width: 100%;
+    margin-right: 158px;
 }
 
 header nav a {
@@ -72,8 +73,8 @@ header nav a {
     font-size: 20px;
     text-decoration: none;
     font-weight: 900;
-    margin-left: 14px;
-    margin-right: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 header nav a:hover {
@@ -153,4 +154,3 @@ button {
     }
 
 }
-
