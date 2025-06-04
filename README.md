@@ -1,8 +1,10 @@
 Desafio JavaScript - Site da Ford
 
 
-O  objetivo desse projeto é aprimorar um site da Ford adicionando efeitos interativos e
-funcionalidades avançadas com JavaScript. Este projeto faz parte do curso de Programação Front-End .
+O  objetivo desse projeto é aprimorar um site da Ford 
+adicionando efeitos interativos e
+funcionalidades avançadas com JavaScript.
+Este projeto faz parte do curso de Programação Front-End .
 
 Objetivos principais:
 
